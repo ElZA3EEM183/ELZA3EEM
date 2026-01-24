@@ -9,6 +9,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="imege/x-icon" href="img/ELZA3EEM-logo-2.ico">
+    <meta
+    name="theme-color"
+    content=" rgb(16, 39, 107)"
+    >
     <meta 
     property="og:title"
     content="ELZA3EEM PORTFOLIO"
@@ -25,7 +30,7 @@
     property="og:type"
     content="website"
     >
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -72,14 +77,14 @@
     </section>
 
     <section class="about">
-      <div class="about-card">
+      <div   class="about-card">
         <div class="about-img">
           <img src="img/ELZA3EEM logo 2.jpg" alt="img" />
         </div>
         <div class="about-contant">
-          <h1>About Me</h1>
-          <h2>ELZA3EEM</h2>
-          <p>
+          <h1 data-aos="fade-right">About Me</h1>
+          <h2 data-aos="fade-left">ELZA3EEM</h2>
+          <p data-aos="fade-down">
             I am a dedicated Frontend Developer with a strong passion for
             building modern, responsive, and visually engaging web interfaces. I
             specialize in transforming UI/UX designs into clean, structured, and
@@ -106,11 +111,11 @@
     <section class="service">
       <h1 class="service-title">My Service</h1>
       <div class="service-cards">
-        <div class="service-card">
+        <div data-aos="fade-right" class="service-card">
           <div class="services-icon">
             <i class="fa-solid fa-code"></i>
           </div>
-          <div class="service-card-contant">
+          <div  class="service-card-contant">
             <h2>1. Frontend Website Development</h2>
             <p>
               I build modern, responsive, and high-performance website
@@ -120,7 +125,7 @@
             </p>
           </div>
         </div>
-        <div class="service-card">
+        <div  data-aos="fade-left" class="service-card">
           <div class="services-icon">
             <i class="fa-solid fa-laptop"></i>
           </div>
@@ -134,7 +139,7 @@
             </p>
           </div>
         </div>
-        <div class="service-card">
+        <div data-aos="fade-right" class="service-card">
           <div class="services-icon">
             <i class="fa-solid fa-screwdriver-wrench"></i>
           </div>
@@ -158,7 +163,27 @@
     <section class="project">
       <h1>Projects</h1>
       <div class="projects-cards">
-        <div class="project-card">
+        <div  data-aos="flip-up" class="project-card">
+          <div class="project-img">
+            <img src="img/project menu 1.jpg" alt="img" />
+          </div>
+          <div   class="project-content">
+            <h2>Menu design 1</h2>
+            <p>
+              this design is a modern Menu for cafe or restaurant I chose simple
+              colors for this website
+            </p>
+            <div class="project-links">
+              <div class="visit-project-link">
+                <a href=""><i class="fa-solid fa-globe"></i> Visit Website</a>
+              </div>
+              <div class="See-the-code-link">
+                <a href=""><i class="fa-brands fa-github"></i> See the Code </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div  data-aos="flip-up"class="project-card">
           <div class="project-img">
             <img src="img/project menu 1.jpg" alt="img" />
           </div>
@@ -178,27 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-img">
-            <img src="img/project menu 1.jpg" alt="img" />
-          </div>
-          <div class="project-content">
-            <h2>Menu design 1</h2>
-            <p>
-              this design is a modern Menu for cafe or restaurant I chose simple
-              colors for this website
-            </p>
-            <div class="project-links">
-              <div class="visit-project-link">
-                <a href=""><i class="fa-solid fa-globe"></i> Visit Website</a>
-              </div>
-              <div class="See-the-code-link">
-                <a href=""><i class="fa-brands fa-github"></i> See the Code </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-card">
+        <div  data-aos="flip-up"class="project-card">
           <div class="project-img">
             <img src="img/project menu 1.jpg" alt="img" />
           </div>
@@ -226,21 +231,21 @@
     <br />
     <br />
     <br />
-    <section class="contact">
-      <div class="contact-img">
+    <section  class="contact">
+      <div data-aos="fade-left" class="contact-img">
         <img src="img/lets wor together.jpg" alt="img" />
       </div>
       <div class="contact-contant">
-        <h1>Let's Get In Touch</h1>
-        <h2><i class="fa-solid fa-phone"></i><span>+20</span>1105243780</h2>
+        <h1 data-aos="fade-right">Let's Get In Touch</h1>
+        <h2 data-aos="fade-left"><i class="fa-solid fa-phone"></i>  <span>+20</span>1105243780</h2>
         <br />
-        <a href="">Massage me whatsApp</a>
+        <a data-aos="fade-left" href="">Massage me whatsApp</a>
         <br />
-        <h2>
-          <i class="fa-solid fa-envelope"></i>elza3breem183<span>@</span>gmail.com
+        <h2 data-aos="fade-left">
+          <i class="fa-solid fa-envelope"></i>  elza3breem183<span>@</span>gmail.com
         </h2>
         <br />
-        <a href="">send Email from my Email</a>
+        <a href="" data-aos="fade-left">send Email from my Email</a>
       </div>
     </section>
     <footer>
@@ -281,5 +286,9 @@
         </marquee>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
