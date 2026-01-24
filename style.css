@@ -613,7 +613,7 @@ footer {
     }
  
     }
-    @media(max-width:380px){ 
+    @media(max-width:400px){ 
         .project-links a{
             padding:0;
             
@@ -639,7 +639,7 @@ footer {
             transform: scale(0.9);
         }
         .welcome-logo img{
-             width: 250px;
+             width: 300px;
         }
            .header-title{
         margin-left: -35px;
