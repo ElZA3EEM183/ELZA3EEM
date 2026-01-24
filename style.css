@@ -1,0 +1,579 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+body {
+    overflow-x: hidden;
+    background: url(img/تصميم\ بدون\ عنوان\ \(1\).png);
+}
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    height: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+   
+}
+.header-title {
+    display: flex;
+}
+nav{
+    padding: 25px;
+}
+nav a {
+    text-decoration: none;
+    margin: 20px;
+    padding: 8px;
+    padding-inline: 15px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 25px;
+}
+.header-title h1 {
+    color: cadetblue;
+}
+.header-title img {
+    margin-right: 10px;
+    width: 50px;
+    border-radius: 50%;
+}
+.welcome,
+.about {
+    height: 100vh;
+
+ 
+} 
+.welcome-card {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-content {
+    color: whitesmoke;
+    padding-top: 100px;
+    padding:10px;
+    animation: fadeInUp 2.5s ease forwards;
+}
+.welcome-name {
+    width: 10ch;
+    color: rgb(148, 209, 206);
+    font-size: 3.3em;
+    
+    padding: 0px;
+    animation: typing 2s steps(20) infinite alternate-reverse;
+    overflow: hidden;
+}
+@keyframes typing{
+    from{
+        width: 0ch;
+    }
+}
+ 
+
+
+.welcome-info p {
+    padding: 20px;
+    width: 650px;
+    font-family: 1.4em;
+}
+.welcome-logo img {
+    margin: 25px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: iconBounce 2s ease-in-out infinite alternate;
+}
+
+@keyframes iconBounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.social-icons i {
+    margin: 5px;
+    font-size: 2.1em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.social-icons i:hover{
+    color: cadetblue;
+}
+.btn-see-project {
+    padding: 10px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    padding-inline: 25px;
+    transition: all 0.5s ease;
+}
+.btn-see-project:hover{
+    background-color: cadetblue;
+    color: whitesmoke;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+.about-card {
+    display: flex;
+    justify-content: center;
+}
+
+.about-contant {
+    color: whitesmoke;
+    margin: 40px;
+    margin-left: 70px;
+ 
+}
+.about-contant p {
+    width: 500px;
+    font-size: 1.1em;
+}
+.about-contant h2 {
+    color: cadetblue;
+}
+.about-img img {
+    animation: iconBounce 2s ease-in-out infinite alternate;
+    width: 450px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service {
+    height:700px ;
+  
+}
+.service-title{
+ 
+    color: whitesmoke;
+    text-align: center;
+    
+}
+.service-cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.service-card {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(16, 39, 107);
+    margin: 25px;
+    transition: 0.5s all ease;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+.service-card-contant {
+    text-align: center;
+    color: whitesmoke;
+}
+.services-icon{
+    
+    font-size:120px;
+    text-align: center;
+}
+.service-card:hover{
+    
+    box-shadow: 0 4px 12px rgba(0, 47, 255, 0.3);
+    border: 1px solid whitesmoke;
+}
+.project{
+    height: 100vh;
+}
+.project h1{
+    text-align: center;
+    margin: 25px;
+    color: whitesmoke;
+}
+.projects-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.project-card{
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    background-color:whitesmoke;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+ 
+}
+.project-img img{
+    width: 400px;
+    border-radius: 20px;
+}
+.project-content{
+    padding: 15px;
+}
+.project-content h2{
+    color: cadetblue;
+}
+.project-content p{
+    margin: 5px;
+}
+.project-links{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.project-links a{
+    text-decoration: none;
+}
+.visit-project-link a{
+    color: white;
+    background-color: cadetblue;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.See-the-code-link a{
+    color:cadetblue;
+    border: 2px cadetblue solid;
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.visit-project-link a:hover{
+    padding-inline: 30px;
+}
+.See-the-code-link a:hover{
+    padding-inline: 30px;
+}
+.contact{
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+
+}
+.contact-contant h1{
+    font-size: 70px;
+    color: cadetblue;
+}
+.contact-img img{
+    width: 500px;
+    border-radius: 25px;
+}
+.contact-contant h2{
+    margin: 25px;
+    color: white;
+    font-size: 30px;
+}
+.contact-contant span{
+    color: cadetblue;
+}
+.contact-contant a{
+    padding: 20px;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 15px;
+    margin: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.contact-contant a:hover{
+    background-color: white;
+    color: cadetblue;
+}
+footer {
+  background:rgb(16, 39, 107);
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  width: 100%;
+   
+}
+
+.tips-bar {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px auto;
+  width: 90%;
+  overflow: hidden;
+}
+ 
+ 
+.tips-bar marquee {
+  font-size: 1em;
+ 
+}
+.footer-title{
+    display: flex;
+}
+.footer-title img{
+    width: 50px;
+    border-radius: 50%;
+}
+.footer-title{
+    margin: 15px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+}
+.website-links a{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 5px;
+}
+.social-media-links a{
+    display: flex;
+    margin: 5px;
+    color: #fff;
+    flex-direction: column;
+}
+@media (max-width:1190px) {
+    .welcome-card p{
+        width: 400px;
+    }
+}
+@media(max-width:1300px){
+    .project{
+        height: 100%;
+    }
+    .project-links{
+        padding: 0px;
+        margin: 0;
+     }
+     .visit-project-link{
+        padding: 12px;
+     }
+     .See-the-code-link{
+        padding: 12px;
+     }
+     .welcome-card{
+        align-items: center;
+     }
+}
+@media (max-width:1000px) {
+     .welcome-logo img{
+        width: 300px;
+        height: 100%;
+     }
+     .welcome-logo{
+        width: 100%;
+        height: 100%;
+     }
+     .welcome-card{
+          margin-left:80px ;
+     }
+     .about{
+        margin-top: -450px;
+     }
+     .about-img img{
+        display: none;
+     }
+     .about-contant p{
+        font-size: 30px;
+        width: 700px;
+     }
+          .project-card{
+        transform: scale(0.9);
+     }
+     .service{height: 100%;}
+     .project{
+        height: 100%;
+     }
+          .about-contant{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding:0;
+     }
+     .about{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+     }
+     .about-card{
+        margin: 25px;
+        width: 100%;
+        height: 100%;
+     }
+ 
+  
+     .about-contant p{
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+     }
+          .contact{
+        flex-direction: column;
+     }
+ 
+    
+}
+@media (max-width:600px) {
+     .welcome-card{
+        flex-direction: column;
+     }
+      
+     .welcome-logo img{
+        width: 325px;
+        height: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+     }
+     .welcome{
+        margin-left: -70px;
+     }
+     .about-img img{
+        display: none;
+     } 
+    
+     .about-contant{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding:0;
+     }
+     .about{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        margin-top: 100px;
+    }
+     .about-card{
+        margin: 25px;
+        width: 100%;
+        height: 100%;
+     }
+ 
+     
+     .about-contant p{
+        margin: 0;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+     }
+     .welcome-info p{
+        padding: 5px;
+        width: 340px;
+     }
+     nav{
+        display: none;
+     }
+     .contact{
+        flex-direction: column;
+     }
+     header{
+        justify-content: center;
+     }
+     .contact-img img{
+       width: 330px;
+     
+     }
+     .project-card{
+       
+        transform: scale(0.9);
+     }
+     .project-card img{
+        width: 100%;
+        height: 100%;
+     }
+     .service{height: 100%;}
+     .project{
+        height: 100%;
+      
+     }
+     
+    
+     .contact-contant h2{
+        font-size: 20px;
+     }
+ 
+     .project-links{
+        padding: 0px;
+        margin: 0;
+     }
+     .visit-project-link{
+        padding: 12px;
+     }
+     .See-the-code-link{
+        padding: 12px;
+     }
+     .project-card{
+        height: 100%;
+        width: 100%;
+     }
+     .contact-img{
+        height: 100%;
+        width: 100%;
+        margin-left: 40px;
+    
+     }
+     .contact{
+        height: 100%;
+        width: 100%;
+        
+         
+     }
+     .contact-contant{
+        height: 100%;
+        margin-bottom:50px ;
+        padding-bottom:50px ;
+        margin-left: 20px;
+     }
+     .contact-contant h2{
+        height: 100%;
+     }
+     .contact-contant a{
+        height: 100%;
+     }
+    
+  
+    .header-title{
+        margin-left: -30px;
+    }
+ 
+    }
